@@ -9,7 +9,6 @@ const { bookReviewRoute } = require("./routes/review");
 const { readingListRoute } = require("./routes/readingList");
 require('dotenv').config();
 
-
 const app = express();
 app.use(cors());
 const PORT = process.env.PORT || 3000;
@@ -35,3 +34,4 @@ app.get("/", (req, res)=>{
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
